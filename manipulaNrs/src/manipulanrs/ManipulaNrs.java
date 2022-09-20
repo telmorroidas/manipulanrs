@@ -18,6 +18,8 @@ public class ManipulaNrs {
             System.out.println("4- troca valores entre variáveis");
             System.out.println("5- compara nrs");
             System.out.println("6- calcular média de aluno");
+            System.out.println("7- calcular custo de carro");
+            System.out.println("8- calcula crédito");
             System.out.println("0- sair");
             System.out.println("selecione a opção pretendida");
             op= ler.nextInt();
@@ -47,6 +49,12 @@ public class ManipulaNrs {
                     break;
                 case 6:
                     MediaAluno.registaNotas();
+                    break;
+                case 7:
+                    Carro.calculaValorFinal();
+                    break;
+                case 8:
+                    Credito.calculaCred();
                     break;
                 default: System.out.println("insira uma opção válida");
                     
