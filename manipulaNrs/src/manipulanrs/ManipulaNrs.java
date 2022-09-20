@@ -13,8 +13,10 @@ public class ManipulaNrs {
         do{
             System.out.println("menu de operação com nrs");
             System.out.println("1- maior de 2 nrs");
-            System.out.println("2 - ordem descrescente");
+            System.out.println("2- ordem descrescente");
             System.out.println("3- soma impares multiplica pares");
+            System.out.println("4- troca valores entre variáveis");
+            System.out.println("5- compara nrs");
             System.out.println("0- sair");
             System.out.println("selecione a opção pretendida");
             op= ler.nextInt();
@@ -33,6 +35,14 @@ public class ManipulaNrs {
                 case 3:
                     somaimpsmultipares();
                     SomaparMultimp.somamulti();
+                    break;
+                case 4:
+                    levalores("insira um valor", "insira outro valor");
+                    TrocaNr.trocavaloresentrevariáveis(x,y);
+                    break;
+                case 5:
+                    levalores("insira um valor", "insira outro valor");
+                    ComparaNr.comparar2valores(x,y);
                     break;
                 default: System.out.println("insira uma opção válida");
                     
