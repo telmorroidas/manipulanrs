@@ -1,13 +1,20 @@
 package manipulanrs;
 
+import static java.lang.System.exit;
+
 
 class Credito {
 
-    static void calculaCred() {
+    static int calculaCred() {
         int s= 0;
         float c= 0;
         System.out.println("saldo médio:");
         s= ManipulaNrs.ler.nextInt();
+        if(s < 0){
+            System.out.println("saldo médio= "+s);
+            System.out.println("não tem direito a crédito. deve ao banco\n");
+            return 0;
+        }    
         switch(s/201){
             case 0:
                 System.out.println("saldo médio= "+s);
@@ -26,12 +33,9 @@ class Credito {
             default:
                 c= (float) (s*0.40);
                 System.out.println("saldo médio= "+s);
-                System.out.println("crédito= "+c+"\n");
-                        
-            
-                
-            
+                System.out.println("crédito= "+c+"\n");    
         }
+        return 0;
         
     }
     

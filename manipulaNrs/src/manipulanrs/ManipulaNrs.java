@@ -54,7 +54,7 @@ public class ManipulaNrs {
                     Carro.calculaValorFinal();
                     break;
                 case 8:
-                    Credito.calculaCred();
+                    int a= Credito.calculaCred();
                     break;
                 default: System.out.println("insira uma opção válida");
                     
