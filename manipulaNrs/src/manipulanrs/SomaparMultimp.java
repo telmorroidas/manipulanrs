@@ -3,7 +3,7 @@ package manipulanrs;
 
 class SomaparMultimp {
 
-    static void somamulti() {
+    static void somaMulti() {
         int soma = 0;
         long multi = 1;
         int x = 1;

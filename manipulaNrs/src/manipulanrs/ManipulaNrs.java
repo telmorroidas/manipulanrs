@@ -17,39 +17,43 @@ public class ManipulaNrs {
             System.out.println("3- soma impares multiplica pares");
             System.out.println("4- troca valores entre variáveis");
             System.out.println("5- compara nrs");
+            System.out.println("6- calcular média de aluno");
             System.out.println("0- sair");
             System.out.println("selecione a opção pretendida");
             op= ler.nextInt();
             switch(op){
                 case 0: break;
                 case 1:
-                    levalores("insira um valor","insira outro valor");
+                    leValores("insira um valor","insira outro valor");
                     MaiorNr.maior2(x,y);
                     break;
                 case 2: 
                     do{
                         le1valor("insira um valor");
                     }while(x<=0);
-                    NumeroDecr.ordenadecr(x);                    
+                    NumeroDecr.ordenaDecr(x);                    
                     break;
                 case 3:
-                    somaimpsmultipares();
-                    SomaparMultimp.somamulti();
+                    somaImpsMultiPares();
+                    SomaparMultimp.somaMulti();
                     break;
                 case 4:
-                    levalores("insira um valor", "insira outro valor");
-                    TrocaNr.trocavaloresentrevariáveis(x,y);
+                    leValores("insira um valor", "insira outro valor");
+                    TrocaNr.trocaValoresEntreVariáveis(x,y);
                     break;
                 case 5:
-                    levalores("insira um valor", "insira outro valor");
+                    leValores("insira um valor", "insira outro valor");
                     ComparaNr.comparar2valores(x,y);
+                    break;
+                case 6:
+                    MediaAluno.registaNotas();
                     break;
                 default: System.out.println("insira uma opção válida");
                     
             }
         }while(op!= 0);
     }
-    private static void levalores(String s1, String s2) {
+    private static void leValores(String s1, String s2) {
         System.out.println(s1);
         x = ler.nextInt();
         System.out.println(s2);
@@ -61,7 +65,7 @@ public class ManipulaNrs {
         x = ler.nextInt();
     }
 
-    private static void somaimpsmultipares() {
+    private static void somaImpsMultiPares() {
        
     }
     

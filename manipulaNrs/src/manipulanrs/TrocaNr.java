@@ -3,7 +3,7 @@ package manipulanrs;
 
 class TrocaNr {
 
-    static void trocavaloresentrevariáveis(int x, int y) {
+    static void trocaValoresEntreVariáveis(int x, int y) {
         
         int z;
         System.out.println("antes da troca x="+x+", y="+y);
